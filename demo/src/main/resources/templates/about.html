@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+     <title th:text="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="faq-layout">
+    <div class="faq-layout__title">
+        <h1 class="title title_with-line">
+            <div class="title__text">Часто задаваемые вопросы</div>
+        </h1>
+    </div>
+    <div class="faq-layout__faq-items">
+        <div class="faq-items">
+            <div class="faq-items__item">
+                <div class="faq-item" qid="1">
+                    <div class="faq-item__title">Я открыл кейс, но вещь не приходит, в чем проблема?</div>
+                    <div class="faq-item__text"><a href="/user">Зайдите в свой профиль</a> и кликните по ссылке 'ЗАБРАТЬ' на интересующем вас предмете.</div>
+                </div>
+            </div>
+            <div class="faq-items__item">
+                <div class="faq-item" qid="4">
+                    <div class="faq-item__title">Пополнил счет, а деньги не пришли, почему?</div>
+                    <div class="faq-item__text">
+                        Деньги могут прийти не сразу - подождите 1 час.
+                        Если не пришли в течение часа - напишите нам на почту (<a href="mailto:support@forcedrop.net?subject=forcedrop.one User not login" class="fc-email">support@forcedrop.net</a>), указав подробные данные платежа.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-items__item">
+                <div class="faq-item" qid="5">
+                    <div class="faq-item__title">У меня есть деньги на Steam аккаунте, а тут они не отображаются, почему?</div>
+                    <div class="faq-item__text">
+                        Деньги Steam не действуют на этом сайте.
+                        Пополнять баланс необходимо отдельно.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-items__item">
+                <div class="faq-item" qid="6">
+                    <div class="faq-item__title">Не могу зайти на сайт через Steam, не грузится страница с кейсами, реклама посреди страницы, да и вообще сайт очень сильно лагает, что делать?</div>
+                    <div class="faq-item__text">
+                        Чаще всего проблема кроется либо в антивирусе, который блокирует соединение с сайтом, либо в расширениях для браузера, которые показывают рекламу, и, возможно, также блокируют соединение с сайтом.
+                        Попробуйте отключить антивирус и удалить подозрительные расширения в браузере.
+                        Рекомендуемый для просмотра сайта браузер - Google Chrome.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-items__item">
+                <div class="faq-item" qid="7">
+                    <div class="faq-item__title">Бонус за адрес сайта в нике Steam</div>
+                    <div class="faq-item__text">
+                        Вы можете получить +10% от пополняемой суммы на баланс, если укажете адрес FORCEDROP.GG в свой ник в Steam!
+                        Подробности: после указания адреса сайта в никнейме Steam Вы должны выйти из профиля на сайте (сделать релогин) и зайти снова.
+                        Должно пройти 24 часа с момента указания Вами адреса сайта в нике Steam.
+                        После чего Вы можете пополнять баланс и бонус добавится автоматически после пополнения.
+                        Бонус за адрес сайта в нике суммируется с другими бонусами, например промокодами.
+                        Если Вы ввели промокод на +25% при пополнении и у Вас указан адрес сайта в нике, то Вы уже получите +35% от пополняемой суммы сверху на баланс сайта!
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-items__item">
+                <div class="faq-item" qid="8">
+                    <div class="faq-item__title">Предметы продаются автоматически, если их не вывести?</div>
+                    <div class="faq-item__text">
+                        Предметы продаются автоматически через месяц.
+                    </div>
+                </div>
+            </div>
+            <div class="faq-items__item">
+                <div class="faq-item" qid="9">
+                    <div class="faq-item__title">Почему я не могу применить промокод?</div>
+                    <div class="faq-item__text">Некоторые промокоды недоступны на 0(нулевом) уровне Steam аккаунта. Подробности: при достижении требуемого уровня, указанного в ошибке при пополнении, вам необоходимо выйти из профиля на сайте(сделать релогин) и зайти снова</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="faq-layout__title">
+        <div class="title title_with-line">
+            <div class="title__text">Как работает бонусный баланс?</div>
+        </div>
+    </div>
+    <div class="faq-layout__faq-items">
+        <div class="faq-items">
+            <div class="faq-items__item">
+                <div class="faq-item" qid="1">
+                    <div class="faq-item__title">Как получить бонусы?</div>
+                    <div class="faq-item__text">Ищите пометку 'Бонусы за открытие' на странице кейса. Количество бонусов за открытие того или иного кейса может быть различным.</div>
+                </div>
+            </div>
+
+            <div class="faq-items__item">
+                <div class="faq-item" qid="1">
+                    <div class="faq-item__title">Для чего нужны бонусы?</div>
+                    <div class="faq-item__text">Накопив определенное количество бонусов, вы сможете открыть определенные кейсы, на которых цена указана в бонусах.</div>
+                </div>
+            </div>
+
+            <div class="faq-items__item">
+                <div class="faq-item" qid="1">
+                    <div class="faq-item__title">Можно ли бонусы преобразовать в рубли?</div>
+                    <div class="faq-item__text">Нет.</div>
+                </div>
+            </div>
+
+            <div class="faq-items__item">
+                <div class="faq-item" qid="1">
+                    <div class="faq-item__title">Что ещё можно сделать с бонусами?</div>
+                    <div class="faq-item__text">Возможности использования и зарабатывания бонусов будут расширены со временем. Мы обязательно оповестим вас о новом функционале <a href="https://vk.com/forcedropnet" target="_blank">в нашей группе ВК</a>, присоединяйтесь!</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="faq-layout__note">
+        <div class="notification">
+            <div class="notification__title">Внимание!</div>
+            <div class="notification__text">Если вы не нашли ответа на свой вопрос в данном разделе, то напишите на почту <a href="mailto:support@forcedrop.net?subject=forcedrop.one User not login">support@forcedrop.net</a> или в сообщения <a href="https://vk.com/forcedropnet/" target="_blank">группы 'Вконтакте'</a>
+            </div>
+        </div>
+    </div>
+    <div class="faq-layout__title">
+        <div class="title title_with-line">
+            <div class="title__text">Почему мы?</div>
+        </div>
+    </div>
+    <div class="faq-layout__why-us">
+        <div class="guarantee_block guarantee_block-gold">
+            <div>
+                <div>Надежность</div>
+                <i>
+                    В случае, если вы не забрали свою вещь сразу, можно зайти в профиль и отправить ее повторно.
+                    Например, если вы открываете 10 или 15 кейсов подряд и не принимаете предметы сразу, бот отправит их вам повторно.
+                    Достаточно просто зайти в профиль, и отправить предметы заново.
+                </i>
+            </div>
+            <div>
+                <div>Качество</div>
+                <i>
+                    Мы не обманываем, и можем это доказать.
+                    Кликнув на предмет в ленте 'Live-дропы' вы увидите профиль пользователя, с историей предметов, которые ему выпали.
+                    Для чего это нужно?
+                    Вы, возможно видели подобную 'Live-дроп' ленту на других сайтах, где выпадают разные 'Азимов за 5 тысяч', потом покупали кейсы, и выпадало оружие за 2-3 рубля.
+                    Здесь Вы можете нажать на иконку предмета (в ленте) и вас перекинет на профиль пользователя, где вы можете посмотреть его инвентарь, и убедиться, что дорогие вещи тоже выпадают, и мы не обманываем.
+                    А так же, у нас выше процент выпадения дорогих вещей.
+                </i>
+            </div>
+            <div>
+                <div>Скорость</div>
+                <i>
+                    Все полностью автоматизировано.
+                    Передача вещей через ботов значительно упрощает весь процесс, и специальный метод закупки гарантирует получение любого предмета, будь то 'Тайное' или 'Армейское' качество.
+                    Возможно вы видели, на многих подобных сайтах не передаются оружия армейского качества, но мы не 'Подобный сайт', мы честные люди!
+                </i>
+            </div>
+        </div>
+    </div>
+    <div class="faq-layout__title">
+        <div class="title title_with-line">
+            <div class="title__text">Как это работает?</div>
+        </div>
+    </div>
+    <div class="faq-layout__how-it-work">
+        <div class="how-it-work-columns">
+            <div class="how-it-work-columns__column">
+                <div class="how-it-work how-it-work_signin">
+                    <div class="how-it-work__img"></div>
+                    <div class="how-it-work__title">Войти</div>
+                    <div class="how-it-work__text">Чтобы начать продавать свои игровые скины за реальные деньги</div>
+                </div>
+            </div>
+            <div class="how-it-work-columns__column">
+                <div class="how-it-work how-it-work_trade">
+                    <div class="how-it-work__img"></div>
+                    <div class="how-it-work__title">Trade-URL</div>
+                    <div class="how-it-work__text">Введите Trade-URL — теперь вы можете моментально получать выигранные предметы.</div>
+                </div>
+            </div>
+            <div class="how-it-work-columns__column">
+                <div class="how-it-work how-it-work_balance">
+                    <div class="how-it-work__img"></div>
+                    <div class="how-it-work__title">Баланс</div>
+                    <div class="how-it-work__text">Пополните счёт на сайте любым удобным способом, даже ненужными скинами!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="faq-layout__advantages">
+        <div class="wrapper">
+            <div class="our-advantage-sections">
+                <div class="our-advantage-sections__section">
+                    <div class="our-advantage our-advantage_unique">
+                        <div class="our-advantage__img"></div>
+                        <div class="our-advantage__title">Уникальный</div>
+                        <div class="our-advantage__text">Мы постоянно работаем над функционалом сайта, чтобы максимально соответствовать требованиям наших пользователей</div>
+                    </div>
+                    <div class="our-advantage our-advantage_safe">
+                        <div class="our-advantage__img"></div>
+                        <div class="our-advantage__title">Безопасный</div>
+                        <div class="our-advantage__text">Мы используем защищенное соединение и имеем сертификаты безопасности</div>
+                    </div>
+                </div>
+                <div class="our-advantage-sections__section our-advantage-sections__section_offset">
+                    <div class="our-advantage our-advantage_rapid">
+                        <div class="our-advantage__img"></div>
+                        <div class="our-advantage__title">Быстрый</div>
+                        <div class="our-advantage__text">Мы гарантируем моментальную доставку выигранных предметов, при условии стабильной работы Steam</div>
+                    </div>
+                    <div class="our-advantage our-advantage_advantageous">
+                        <div class="our-advantage__img"></div>
+                        <div class="our-advantage__title">Выгодный</div>
+                        <div class="our-advantage__text">У нас шанс получить любимый скин гораздо выше, а непонравившийся предмет можно продать прямо на сайте</div>
+                    </div>
+                </div>
+                <div class="our-advantage-sections__section our-advantage-sections__section_center">
+                    <div class="our-advantage our-advantage_reputation">
+                        <div class="our-advantage__img"></div>
+                        <div class="our-advantage__title">Мы дорожим своей репутацией</div>
+                        <div class="our-advantage__text">Вся статистика перед вами, комментарии о нас можно найти <a href="https://vk.com/forcedropnet" target="_blank">в группе ВК</a></div>
+                    </div>
+                </div>
+                <a href="/" class="our-advantage-sections__logo">
+                    <img src="/public/img/logo_large.svg">
+                    <span>мощный дроп кейсов CS:GO</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
